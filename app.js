@@ -53,8 +53,6 @@ imgSaveButton.addEventListener('click', function(e) {
         e.target.parentElement.parentElement.remove();
     });
 
-
-
     const topText = getTexts('text-top', imgTextTopSave, imgTextStyleSave);
     const bottomText = getTexts('text-bottom', imgTextBottomSave, imgTextStyleSave);
 
@@ -66,7 +64,6 @@ imgSaveButton.addEventListener('click', function(e) {
 function getTexts(divClass, saveText, saveStyle) {
     const div = document.createElement('div');
     const p = document.createElement('p');
-
     div.classList.add(divClass);
     p.classList.add('img-text');
     p.innerText = saveText.innerText;
