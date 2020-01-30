@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="container1">
+        <h2>MEME GENERATOR</h2>
+        <form id="meme-form" action="">
+            <p>
+                <label for="">Enter Img URL:</label>
+                <input type="text" name="img-input" placeholder="Img URL...">
+            </p>
+            <p>
+                <label for="">Enter Top Text:</label>
+                <input type="text" name="top-text" placeholder="Top Text...">
+
+            </p>
+            <p>
+                <label for="">Enter Bottom Text:</label>
+                <input type="text" name="bottom-text" placeholder="Bottom Text...">
+            </p>
+            <p>
+                <label for="">Select Color:</label>
+                <input type="color"></input>
+            </p>
+            <p> <label for="">Select Font Size:</label>
+                <input type="range" min="20" max="40"><span class="output"></span>px</input>
+            </p>
+            <!-- <input id="btn" type="submit"> -->
+            <button id="btn">Apply</button>
+            <button id="img-save-btn">Save</button>
+            <h3>PREVIEW:</h3>
+        </form>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="box">
+            <img id="img-upload" src="" width="400px" height="300px" alt="Please Enter img. URL">
+            <div class="text-top">
+                <p class="img-text"></p>
+            </div>
+            <div class="text-bottom">
+                <p class="img-text"></p>
+            </div>
+        </div>
+    </div>
+    <section class="result">
+    </section>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
