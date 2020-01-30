@@ -72,8 +72,8 @@ function getTexts(divClass, saveText, saveStyle) {
     p.innerText = saveText.innerText;
     p.style.fontSize = saveStyle.style.fontSize;
     p.style.color = saveStyle.style.color;
-
-    return div.append(p);
+    div.append(p);
+    return div;
 }
 
 
